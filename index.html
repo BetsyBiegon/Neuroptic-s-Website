@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0c2f18c568.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>AI Automations</p>
+            <h1>Welcome, To <span>Neuroptik AI Automation.</span><br></h1>
+        </div>
+    </div>
+</div>
+<!-----------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="assets/AI.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p> At Neuroptik AI, we are pioneers in AI-driven automation for social media success. Our mission is to simplify social media management, empowering businesses and creators to achieve consistent engagement and growth. By leveraging advanced AI technology, we automate content creation, curate insightful information, schedule posts strategically, and generate visually stunning content. Join us in transforming your social media presence with efficiency, consistency, and impactful reach.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End-Development</span><br>Adding Interactivity and Functionality to Websites</li>
+                        <li><span>Basic Web Design Principles</span><br>Creating Visually and User-Friendly Websites</li>
+                        <li><span>Problem Solving Skills</span><br>Tackling coding challenges and exercises</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Software Engineer</li>
+                        <li><span>2023 - 2024</span><br>Social Media Marketer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Moringa School</li>
+                        <li><span>2023</span><br>LinkedIn Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I provide end-to-end web development services, from custom design to e-commerce solutions, ensuring user-friendly, secure, and optimized websites with ongoing support</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>API Development</h2>
+                <p>API development is about building bridges between software applications, enabling them to share data and functionalities smoothly and securely</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-comments"></i>
+                <h2>Chatbot Development</h2>
+                <p>creating customized virtual assistants for businesses and individuals, automating interactions across messaging platforms or websites. From design to deployment, I provide tailored solutions with ongoing maintenance and optimization.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Our Projects</h1>
+        <div class="project-list">
+            <div class="projects">
+                <img src="assets/project1.jpeg">
+                <div class="layer">
+                    <h3>Flatagram Web Application</h3>
+                    <p>It is an app for viewing, liking, and commenting on a single picture. You will be using a local API and building out the frontend for the app Flatagram</p>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="assets/project2.jpeg">
+                <div class="layer">
+                    <h3>API Development</h3>
+                    <p>My API development project specializes in creating custom APIs for seamless communication between software systems. From robust security to scalable architecture, I ensure efficient data exchange and seamless integration, supported by thorough documentation, testing, and ongoing maintenance.</p>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="assets/project3.jpeg">
+                <div class="layer">
+                    <h3>Chatbot Development</h3>
+                    <p>In my chatbot development project, I create intelligent conversational agents tailored to your needs. Using advanced NLP, they understand and respond to user queries across various platforms. Integrated with backend systems, they handle tasks seamlessly. With continuous learning, personalization, and maintenance, they ensure engaging and efficient interactions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------contact------------>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+        <div class="contact-left">
+         <h1 class="sub-title">Contact Us</h1>
+         <p><i class="fa-solid fa-square-envelope"></i>neuropticautomation@gmail.com</p>
+         <p><i class="fa-solid fa-phone"></i>+254-711-181-856</p>
+         <div class="social-icons">
+           <a href="https://www.instagram.com/betsy_biegon?igsh=MWJ4eDNnNHZhazY0bA=="><i class="fa-brands fa-square-instagram"></i></a>
+           <a href="https://www.linkedin.com/company/neuroptik/"><i class="fa-brands fa-linkedin"></i></a>
+         </div>
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright @NeuroptikAIAutomation</p>
+  </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        Array.from(tablinks).forEach(function(tablink) {
+            tablink.classList.remove("active-link");
+        });
+
+        Array.from(tabcontents).forEach(function(tabcontent) {
+            tabcontent.classList.remove("active-tab");
+        });
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // Dark mode toggle
+    document.addEventListener("DOMContentLoaded", function() {
+        const body = document.body;
+        const darkModeToggle = document.createElement("button");
+        darkModeToggle.innerHTML = "Toggle Dark Mode";
+
+        // Check if dark mode is enabled
+        const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+        if (isDarkMode) {
+            body.classList.add("dark-mode");
+            darkModeToggle.innerHTML = "Toggle light Mode";
+        }
+
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            body.classList.toggle("dark-mode");
+            const mode = body.classList.contains("dark-mode") ? "enabled" : "disabled";
+            localStorage.setItem("darkMode", mode);
+            darkModeToggle.innerHTML = body.classList.contains("dark-mode") ? "Toggle light Mode" : "Toggle Dark Mode";
+        }
+
+        // Add event listener to dark mode toggle button
+        darkModeToggle.addEventListener("click", toggleDarkMode);
+        document.getElementById("header").appendChild(darkModeToggle);
+    });
+</script>
+
+</body>
+</html>

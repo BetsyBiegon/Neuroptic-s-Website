@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule an Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="sub-title">Schedule an Appointment</h1>
+        <form name="appointment-form" onsubmit="return showSuccessMessage()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+
+        <p id="success-message" style="display: none; color: green; margin-top: 10px;">Appointment scheduled successfully!</p>
+    </div>
+
+    <script>
+        function showSuccessMessage() {
+            var successMessage = document.getElementById("success-message");
+            var form = document.forms["appointment-form"];
+
+            successMessage.style.display = "block";
+
+            // Clear the form fields
+            form.reset();
+
+            setTimeout(function() {
+                successMessage.style.display = "none";
+            }, 3000); // 3000 milliseconds (3 seconds)
+
+            return false; // Prevent actual form submission for demo purposes
+        }
+    </script>
+</body>
+</html>
